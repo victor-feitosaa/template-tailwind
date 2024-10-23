@@ -25,7 +25,12 @@ input::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
     border-bottom-color: orange;
 }
 
-.icones {
+.iconesmd {
     height: 50px;
     width: 50px;
+}
+
+.icones {
+    height: 30px;
+    width: 30px;
 }
