@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tailwind.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body>
+    <header></header>
+
+    <main>
+
+        <section class="px-14 py-10 max-w-screen-xl mx-auto" >
+            <div class="flex flex-col gap-4 pb-6">
+                <h1 class="text-3xl font-semibold">Vamos finalizar sua inscrição!</h1>
+                <p>Preencha os dados abaixo e prossiga para finalizar</p>
+            </div>
+
+            <div >
+                <form id="form__forms--complemento" class="form__forms flex flex-col gap-0 " >
+                    
+                    <div class="flex flex-col lg:flex lg:flex-row gap-10">
+                        <div class="conteudo__forms  flex flex-col w-full  ">
+                            <label for="cep__forms" class="font-medium text-lg">CEP *</label>
+                            <input 
+                            
+                            id="cep__forms"
+                            placeholder=""
+                            class="py-2 outline-none border-b-2"
+                            oninput=""
+                            
+                            />
+                            <a class="error__forms ">Aqui vai a mensagem de erro...</a>
+
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col lg:flex lg:flex-row gap-10 ">
+
+
+                        <div class="conteudo__forms  flex flex-col w-full  ">
+                            <label for="cidade__forms" class="font-medium text-lg">Cidade *</label>
+                            <input 
+
+                            id="cidade__forms"
+                            class="py-2 outline-none border-b-2"
+                            oninput=""
+                            
+                            />
+                            <a class="error__forms ">Aqui vai a mensagem de erro...</a>
+                        </div>
+
+                        <div class="conteudo__forms  flex flex-col w-full lg:w-1/5 ">
+                            <label for="estado__forms" class="font-medium text-lg">Estado *</label>
+                            <input 
+                            id="estado__forms"
+                            class="py-2 outline-none border-b-2"
+                            oninput=""
+                            
+                            />
+                            <a class="error__forms ">Aqui vai a mensagem de erro...</a>
+                        </div>
+
+                    </div>
+
+
+
+                    
+                    <div class="flex flex-col lg:flex lg:flex-row gap-10 ">
+                        <div class="conteudo__forms  flex flex-col w-full lg:w-1/2">
+                            <label for="bairro__forms" class="font-medium text-lg">Bairro *</label>
+                            <input 
+                            
+                            id="bairro__forms"
+                            
+                            class="py-2 outline-none border-b-2"
+                            
+                            
+                            />
+                            <a class="error__forms ">Aqui vai a mensagem de erro...</a>
+
+                        </div>
+
+                        <div class="conteudo__forms  flex flex-col w-full lg:w-1/2">
+                            <label for="rua__forms" class="font-medium text-lg">Rua *</label>
+                            <input                          
+                            id="rua__forms"
+                            class="py-2 outline-none border-b-2"
+                            
+                            />
+                            <a class="error__forms ">Aqui vai a mensagem de erro...</a>
+                        </div>
+
+                        <div class="conteudo__forms  flex flex-col w-full lg:w-1/5">
+                            <label for="numero__forms" class="font-medium text-lg">Número *</label>
+                            <input 
+                            type="text"
+                            id="numero__forms"
+                            placeholder=""
+                            class="py-2 outline-none border-b-2"
+                            
+                            
+                            />
+                            <a class="error__forms ">Aqui vai a mensagem de erro...</a>
+                        </div>
+
+                    </div>
+
+                    <div class="flex flex-col lg:flex lg:flex-row gap-10 ">
+
+                        <div class="conteudo__forms  flex flex-col w-full ">
+                            <label for="data__forms" class="font-medium text-lg">Data de nascimento *</label>
+                            <input 
+                            maxlength="10"
+                            id="data__forms"
+                            class="py-2 outline-none border-b-2"
+                            
+                            
+                            />
+                            <a class="error__forms ">Aqui vai a mensagem de erro...</a>
+                        </div>
+
+                    </div>
+
+                    <div class="conteudo__forms   flex flex-col gap-2 ">
+                        <label for="genero__forms"
+                         class="font-medium text-lg">Sexo *</label>
+                        <select name="genero" id="genero__forms" class="border-2 border-blue-400 px-1 py-2 rounded-md outline-none">
+                            <option value="">infome seu sexo</option>
+                            <option value="masc">Masculino</option>
+                            <option value="fem">Feminino</option>
+
+                            
+                        </select>
+                        <a class="error__forms">Aqui vai a mensagem de erro...</a>
+                    </div>
+
+                    <div class="flex  flex-col-reverse w-full md:flex md:flex-row md:justify-center py-10 gap-10">
+                        <button id="btnRetornar__complemento" class="text-black bg-gray-300 hover:bg-gray-400 focus:outline-none focus:ring-4 focus:ring-blue-300 rounded-sm font-bold text-lg  px-25 md:px-20 py-5 text-center ">< RETORNAR </button>
+
+                        <button id="btnAvancar__complemento" class="text-white bg-blue-500 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 rounded-sm font-bold text-lg px-25 md:px-20 py-5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">AVANÇAR > </button>
+                    </div> 
+                </form>
+
+
+                
+            </div>
+        </section>
+
+    </main>
+
+    <script src="scripts/complemento.js"></script>
+    
+</body>
+</html>

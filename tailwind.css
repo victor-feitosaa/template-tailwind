@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.sel__localMult.error {
+    border-color: #ff3b25;
+}
+
+.msgError__localMult {
+    color: #ff3b25;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    padding: 2%;
+    visibility: hidden;
+}
+
+.msgError__localMult.error {
+    visibility: visible;
+}
+
+.img__forms {
+    height: 600px;
+    width: 600px;
+}
+
+
+
+.conteudo__forms a{
+    /* position: absolute; */
+    
+    opacity: 0;
+
+}
+
+
+
+
+.conteudo__forms.error input {
+    border-bottom: solid 2px;
+    border-bottom-color: #ff3b25;
+    display: flex;
+    width: 100%;
+    
+}
+
+.conteudo__forms.error select {
+    border-color: #ff3b25;
+    display: flex;
+    width: 100%;
+}
+
+.conteudo__forms.error a {
+    color: #ff3b25;
+    opacity: 100;
+}
+
+
+
+#telefone__forms::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+#cpf__forms::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+#numero__forms::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+#rg__forms::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+
+//
+
+
+
+.imagem {
+    height: 550px;
+}
+
+.imagem2 {
+    height: 400px;
+}
+
+
+.row-cards {
+    background-color: #00000000;
+}
+
+.apresentacao {
+    background-color: #fff;
+}
+
+.atuacao {
+    background-color: #fff;
+}
+

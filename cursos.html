@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="tailwind.css">
+   
+    
+</head>
+<body>
+    <header></header>
+
+    <main class="max-w-screen-xl mx-auto ">
+
+            <div class="w-full flex flex-col   ">
+
+                <section class="pt-10">
+                    <div class="flex items-center flex-col w-full  gap-5 pb-10  lg:py-16 px-4 md:px-24  ">
+                        <h3 class="text-center lg:text-xl lg:font-semibold">Qual curso você deseja se matricular?</h3>
+                        <select item id="cursosDisponiveis__cursos" class=" border-solid border-2 p-3 border-blue-500 rounded-md outline-none w-11/12 md:w-full" name="cursos" id="cursos">
+                            <option value="">Selecione o curso</option>
+                        </select>
+                    </div>
+                </section>
+
+                <section class="row-escondida">
+                    <div class="flex w-full px-10 md:px-0">
+
+                        <div class="flex flex-col gap-5  lg:px-16 py-5 w-full items-center">
+                            <h1 id="cursoNome" class="text-center text-3xl md:text-6xl font-semibold"></h1>
+                            <p class="text-xs md:text-lg text-center" >Confira nossas ofertas e comece hoje sua graduação!</p>
+                        </div>
+
+                        <!-- <div class="lg:w-1/2 flex items-start">
+                            <img class="h-3/4" src="images/college project-rafiki.png" alt="">
+                        </div> -->
+
+                    </div>
+                
+                </section>
+
+            </div>
+
+
+
+
+
+        <section class="row-cards row-escondida">
+
+            
+
+            <div class="flex flex-col items-center pt-10  md:px-0 ">
+
+                
+                <div class="container-cards py-5 md:px-24 w-full items-center flex flex-col lg:flex lg:flex-row justify-center flex-wrap gap-5 " >
+                    
+ 
+                </div> 
+
+
+            </div>
+
+
+            
+
+        </section>
+
+
+
+        <section class="apresentacao row-escondida py-14">
+            <div class="px-10 pb-0 md:px-24 py-14 lg:flex items-center gap-10">
+                <div class="lg:w-1/2 ">
+                    <div class="flex flex-col ">
+                        <h2 id="identifierApresentacao" class="pb-3 text-2xl md:text-3xl font-bold">Apresentação</h2>
+                        <div id="textoApresentacao" class="text-lg md:text-xl "></div>
+
+                    </div>
+                </div>
+
+                <div class="w-1/2 flex  justify-center hidden lg:block">
+                    <img class="imagem " src="images/college project-pana.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="atuacao  row-escondida ">
+            <div class="px-10  md:px-24 flex items-center gap-10">
+
+                <div class="lg:w-1/2 flex justify-center hidden lg:block">
+                    <img class="imagem2 " src="images/Analyze-pana.png" alt="">
+                </div>
+
+                <div class="w-full lg:w-1/2">
+                    <div class="flex flex-col justify-center ">
+                        <h2 id="identifierAtuacao" class=" pb-3 text-2xl md:text-3xl font-bold">Atuação</h2>
+   
+                        <div id="textoAtuacao" class="text-lg md:text-xl "></div>
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sectionVideo" class="md:pt-14 px-10 md:px-0  row-escondida" >
+            <h2 class="text-lg md:text-3xl flex justify-center items-center font-extrabold h-12 py-12">SOBRE NÓS</h2>
+            <div class="divVideo flex justify-center items-center  pb-20">
+                <video class="video__cursos  md:h-96 md:shadow-2xl rounded-md" controls="controls" loop="">
+
+                    <source id="sourceVideo">
+
+                    <!-- <source  src="https://idqgxdzmads5.objectstorage.us-ashburn-1.oci.customer-oci.com/n/idqgxdzmads5/b/cdata/o/public%2FSeu%20futuro%20tem%20um%20so%CC%81%20norte!%20Selec%CC%A7a%CC%83o%202024.1%20Uninorte.mp4" type="video/mp4" class="video_url_source"> -->
+                </video>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="row-escondida">
+                <div class="flex  flex-col-reverse w-full px-16    md:flex md:flex-row md:justify-center py-10 gap-10">
+                    <button id="btnRetornar__cursos" class="text-black bg-gray-300 hover:bg-gray-400 focus:outline-none focus:ring-4 focus:ring-blue-300 rounded-sm font-bold text-lg  px-25 md:px-20 py-5 text-center ">< RETORNAR </button>
+
+                    <button id="btnAvancar__cursos" class="text-white bg-blue-500 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 rounded-sm font-bold text-lg px-25 md:px-20 py-5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">AVANÇAR > </button>
+                </div> 
+            </div>
+        </section>
+
+
+    </main>
+    
+    <script src="scripts/cursos.js" type="module"></script>
+</body>
+</html>

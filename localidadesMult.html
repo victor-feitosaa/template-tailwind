@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="tailwind.css">
+</head>
+<body class="">
+    <header>
+        
+    </header>
+
+    <main class="main__localMult
+    max-w-screen-xl mx-auto
+    ">
+        <div class="container__localMult
+        flex flex-col md:flex md:flex-row justify-center items-center h-screen px-14 gap-10
+        ">
+            <div class="w-full md:w-1/2">
+                <img class="img__localMult h-full" src="images/Address-cuate.png" alt="here">
+            </div>
+
+            <div class="colDois__localMult flex flex-col ">
+                <div class="containerDois__localMult
+                flex flex-col gap-10 
+                ">
+                    <h1 class="text-4xl font-semibold ">Selecione sua localidade</h1>
+                    <div class="cidades__localMult
+                    h-7
+
+                    ">
+                        <select name="localidades" id="sel__localMult" class="sel__localMult
+                        border-solid border-2 border-blue-400 outline-none w-full rounded-md p-3 text-lg font-medium
+                        ">
+                            <option value="">Selecione a cidade</option>
+                        </select>
+                        <a class="msgError__localMult">Selecione a cidade!</a>
+                    </div>
+
+                    <div class="">
+                        <button id="btn__localMult" class="bg-blue-600 text-white font-medium w-full rounded-md p-3 pointer hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300">AVANÇAR > </button>
+                    </div>
+                  
+                </div> 
+
+
+            </div>
+        </div>
+    </main>
+
+    <script src="scripts/localMult.js"></script>
+
+</body>
+</html>

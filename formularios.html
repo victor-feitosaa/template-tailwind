@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+     <link rel="stylesheet" href="tailwind.css">
+     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <script src="./scripts/formsApi.js" type="module"  defer></script>
+     <script src="./scripts/forms.js" defer></script>
+</head>
+<body>
+    <header>
+        
+    </header>
+
+    <main id="main__forms ">
+        <div class="main__container__forms
+        flex justify-center items-center h-screen
+        ">
+            <section class="colUm__forms w-2/5 hidden lg:block ">
+                <img class="img__forms xl:w-full xl:h-full" src="images/Forms-cuate.png" alt="banner">
+            </section>
+
+            <section class="colDois__forms   md:w-10/12 lg:w-1/2 max-w-5xl shadow-xl  mx-auto l p-10">
+                <div class="header__forms text-xl lg:text-3xl font-semibold pb-5 flex flex-col">
+                    <h2>PREENCHA SEUS DADOS</h2>
+                </div>
+
+                <form id="form__forms" class="form__forms flex flex-col gap-0 " >
+                    
+                    <div class="conteudo__forms flex flex-col gap-2">
+                        <label for="formasDeIngresso"
+                         class="font-medium text-lg">Forma de ingresso *</label>
+                        <select name="formasDeIngresso" id="formasDeIngresso__forms" class="border-2 border-blue-400 px-1 py-2 rounded-md">
+                            <option value="">Selecione a forma de ingresso</option>
+                            
+                        </select>
+                        <a class="error__forms">Aqui vai a mensagem de erro...</a>
+                    </div>
+
+
+                    <div class="conteudo__forms flex flex-col ">
+                        <label for="cpf__forms" class="font-medium text-lg">CPF *</label>
+                        <input 
+                         maxlength="14"
+                         id="cpf__forms"
+                         placeholder="000.000.000-00"
+                         class="py-2 outline-none border-b-2"
+                         oninput="formatarCPF(this)"
+                         
+                        />
+                        <a class="error__forms ">Aqui vai a mensagem de erro...</a>
+                    </div>
+                    
+                    <div class="conteudo__forms flex flex-col">
+                        <label for="nome__forms "  class="font-medium text-lg">Nome *</label>
+                        <input 
+                         type="text"
+                         id="nome__forms" 
+                         placeholder="Digite o seu nome..."
+                         class="py-2 outline-none  border-b-2"
+                        />
+                        <a class="error__forms">Aqui vai a mensagem de erro...</a>
+                    </div>
+
+                    <div class="conteudo__forms flex flex-col">
+                        <label for="email" class="font-medium text-lg">Email *</label>
+                        <input 
+                         type="email"
+                         id="email__forms"
+                         placeholder="Digite seu email..."
+                         class="py-2 outline-none border-b-2"
+                        />
+                        <a class="error__forms">Aqui vai a mensagem de erro...</a>
+                    </div>
+
+                    <div class="conteudo__forms flex flex-col mb-2">
+                        <label for="username" class="font-medium text-lg">Telefone *</label>
+                        <input 
+                         
+                         id="telefone__forms"
+                         placeholder="(00) 00000-0000"
+                         class="py-2 outline-none border-b-2"
+                         oninput="formatarTelefone(this)"
+                         maxlength="14"
+                        />
+                        <a class="error__forms ">Aqui vai a mensagem de erro...</a>
+                    </div>
+
+                    <div class="">
+                        <button id="btn__forms" class="bg-blue-600 text-white font-medium w-full rounded-md p-3 pointer hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 ">AVANÇAR > </button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer></footer>
+
+    <!-- <script src="scripts/forms.js"></script>
+    <script src="scripts/formsApi.js"></script> -->
+</body>
+</html>
